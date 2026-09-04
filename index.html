@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>sam_dev0 — builds</title>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sky: #bfe4f5; --pink: #ffd1dc; --yolk: #ffe066; --ink: #2b2b2b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--sky); color: var(--ink);
+    font-family: 'Patrick Hand', sans-serif; padding: 30px 16px 60px;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; }
+
+  .hero { text-align: center; margin-bottom: 36px; }
+  .hero img {
+    width: 120px; height: 120px; border-radius: 50%; object-fit: cover;
+    border: 3px solid var(--ink); box-shadow: 4px 4px 0 var(--ink);
+    margin-bottom: 14px;
+  }
+  .hero h1 {
+    font-family: 'Kalam', cursive; font-weight: 700; font-size: 34px; margin: 0 0 8px;
+  }
+  .hero p { font-size: 17px; max-width: 420px; margin: 0 auto; line-height: 1.5; }
+  .hero .links { margin-top: 16px; display: flex; justify-content: center; gap: 10px; }
+  .hero .links a {
+    background: #fff; border: 2.5px solid var(--ink); border-radius: 999px;
+    padding: 6px 16px; box-shadow: 3px 3px 0 var(--ink); text-decoration: none;
+    color: var(--ink); font-size: 15px; font-family: 'Kalam', cursive; font-weight: 700;
+  }
+
+  .section-title {
+    font-family: 'Kalam', cursive; font-weight: 700; font-size: 20px;
+    text-align: center; margin: 34px 0 16px;
+  }
+
+  .card { display: flex; align-items: center; gap: 14px;
+    background: #fff; border: 2.5px solid var(--ink); border-radius: 16px;
+    box-shadow: 4px 4px 0 var(--ink); padding: 14px 18px; margin-bottom: 14px;
+    text-decoration: none; color: var(--ink);
+  }
+  .card:active { transform: translate(2px,2px); box-shadow: 2px 2px 0 var(--ink); }
+  .card .pfp {
+    width: 52px; height: 52px; border-radius: 50%; flex-shrink: 0;
+    border: 2px solid var(--ink); object-fit: cover; background: var(--yolk);
+    display: flex; align-items: center; justify-content: center; font-size: 26px;
+  }
+  .card .pfp img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+  .card .name { font-family: 'Kalam', cursive; font-weight: 700; font-size: 18px; margin: 0 0 4px; }
+  .card .desc { font-size: 15px; margin: 0; opacity: 0.85; }
+
+  .footer-note { text-align: center; font-size: 14px; margin-top: 30px; opacity: 0.7; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <img src="assets/base_char.jpeg" alt="sam_dev0">
+    <h1>sam_dev0</h1>
+    <p>building nft collections, trading bots, and tools people actually use — across chains.</p>
+    <div class="links">
+      <a href="https://x.com/sam_dev0" target="_blank">X</a>
+      <a href="https://github.com/solretard" target="_blank">GitHub</a>
+    </div>
+  </div>
+
+  <div class="section-title">🚀 projects & platforms</div>
+  <a href="https://www.dredddocs.xyz/" target="_blank" class="card">
+    <div class="pfp"><img src="assets/base_char.jpeg" alt="Dredd Doctors"></div>
+    <div>
+      <p class="name">Dredd Doctors</p>
+      <p class="desc">300 mutated rats + a free rug-checking toolkit for XRPL.</p>
+    </div>
+  </a>
+  <a href="#" target="_blank" class="card">
+    <div class="pfp"><img src="assets/ripplets.png" alt="Ripplets"></div>
+    <div>
+      <p class="name">Ripplets</p>
+      <p class="desc">100 penguins that earn tokens just for being held.</p>
+    </div>
+  </a>
+  <a href="#" target="_blank" class="card">
+    <div class="pfp"><img src="assets/grizzly_cults.webp" alt="Grizzly Cults"></div>
+    <div>
+      <p class="name">Grizzly Cults</p>
+      <p class="desc">199 bears, full site build for a client.</p>
+    </div>
+  </a>
+  <a href="#" target="_blank" class="card">
+    <div class="pfp"><img src="assets/trenchers.jpg" alt="Trenchers"></div>
+    <div>
+      <p class="name">Trenchers</p>
+      <p class="desc">a trench-warfare game with PvP.</p>
+    </div>
+  </a>
+
+  <div class="section-title">🤖 trading bots</div>
+  <a href="https://github.com/solretard/xrpl-sniper-bot" target="_blank" class="card">
+    <div class="pfp">🎯</div>
+    <div>
+      <p class="name">XRPL Sniper Bot</p>
+      <p class="desc">catches fresh First Ledger launches at the right ledger.</p>
+    </div>
+  </a>
+  <a href="#" target="_blank" class="card">
+    <div class="pfp">☀️</div>
+    <div>
+      <p class="name">pump.fun Sniper</p>
+      <p class="desc">Solana bonding-curve sniper.</p>
+    </div>
+  </a>
+  <a href="https://github.com/solretard/fourmeme-sniper" target="_blank" class="card">
+    <div class="pfp">🦀</div>
+    <div>
+      <p class="name">four.meme Sniper</p>
+      <p class="desc">BSC graduation sniper, built in Rust.</p>
+    </div>
+  </a>
+
+  <div class="footer-note">built one project at a time 🐧</div>
+
+</div>
+</body>
+</html>
